@@ -83,9 +83,9 @@ SELECT
     CONCAT(s.first_name, ' ', s.last_name) AS staff_name,
     COUNT(p.payment_id) AS sales_count,
     CASE 
-        WHEN COUNT(p.payment_id) > 8000 THEN 'Да'
-        ELSE 'Нет'
-    END AS Премия
+        WHEN COUNT(p.payment_id) > 8000 THEN 'Yes'
+        ELSE 'No'
+    END AS Bonus
 FROM 
     staff s
 JOIN 
